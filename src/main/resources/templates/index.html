@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>REST Website Displayer Test</title>
+</head>
+<body>
+<form action="#" th:action="@{/}" th:object="${url}" method="post">
+    <label><b>Type website url (eg. www.google.com): </b><input type="text" th:field="*{value}" />
+    <input type="submit" value="Go" /></label>
+</form>
+<div>
+    [(${website})]
+</div>
+</body>
+</html>
